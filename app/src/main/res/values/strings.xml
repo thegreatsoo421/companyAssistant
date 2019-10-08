@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Company assistant</string>
+    <string name="title_activity_loginpage">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="signup">signup</string>
+    <string name="phone_number">phone number</string>
+    <string name="first_name">first name</string>
+    <string name="surname">surname</string>
+    <string name="source"></string>
+    <string name="money_lost">money lost</string>
+    <string name="insert_amount_here">Insert amount here</string>
+    <string name="manage_your_profile">manage your profile</string>
+    <string name="upload_to_firebase">upload to firebase</string>
+    <string name="click_here_to_manage_the_employees">Click here to manage the employees</string>
+    <string name="name">name</string>
+</resources>

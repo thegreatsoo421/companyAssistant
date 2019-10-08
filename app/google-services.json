@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "446846138001",
+    "firebase_url": "https://company-assistant-dbf88.firebaseio.com",
+    "project_id": "company-assistant-dbf88",
+    "storage_bucket": "company-assistant-dbf88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446846138001:android:fcd2df58757b80906ff130",
+        "android_client_info": {
+          "package_name": "com.anamaniac.companyassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446846138001-gi0dq93rgs4796s2jra7rj2hpkmmc09d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.anamaniac.companyassistant",
+            "certificate_hash": "6cb52c9c5d8214d9acccf2893d9ab350b02c1e80"
+          }
+        },
+        {
+          "client_id": "446846138001-h1sjf919eqehhj80flc3vl0kp19kl6dn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACFIAK7vmBVQa8c7sjmGqXmJDSdaZDqU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446846138001-h1sjf919eqehhj80flc3vl0kp19kl6dn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

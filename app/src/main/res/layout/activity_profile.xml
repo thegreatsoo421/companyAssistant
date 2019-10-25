@@ -5,17 +5,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.Profile">
+    tools:context=".view.Profile"
+    android:layout_gravity="center"
+    android:gravity="center">
 
-
-    <de.hdodenhof.circleimageview.CircleImageView
+    <ImageView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/profile_image"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
-        android:src="@drawable/image3"
-        app:civ_border_width="2dp"
-        app:civ_border_color="#FF0000"/>
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_account_balance_black_24dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProfileName"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProfileSurName"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProfileEmail"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProfilePhoneNumber"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/UriView"
+        android:gravity="center"
+        android:layout_gravity="center"/>
 
 
 </LinearLayout>

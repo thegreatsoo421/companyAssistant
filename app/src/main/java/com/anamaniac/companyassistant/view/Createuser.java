@@ -25,8 +25,8 @@ public class Createuser extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_createuser);
-
         Button signup = (Button) findViewById(R.id.signup);
+
     signup.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -42,14 +42,19 @@ public class Createuser extends AppCompatActivity {
             Usersmodel user = new Usersmodel(fname, sname, Email, phone);
             Intent intent = getIntent();
             String child = intent.getStringExtra("source");
+            if (child=="employee")
+            {Intent continuation = new Intent(Createuser.this,employees.class);
+                startActivity(continuation);}
+            else
+                {Intent continuation = new Intent(Createuser.this,Dashboard.class);
+                startActivity(continuation);}
 
             Intent addTaskIntent = new Intent(Createuser.this, Backgroundservice.class);
             addTaskIntent.setAction(BackgroundActivities.WriteToFirebase);
             addTaskIntent.putExtra("UserInformation",user);
             addTaskIntent.putExtra("source",child);
             startService(addTaskIntent);
-            Intent continuation = new Intent(Createuser.this,Dashboard.class);
-            startActivity(continuation);
+
 
         }
     });

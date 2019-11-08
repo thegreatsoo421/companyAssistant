@@ -8,6 +8,7 @@ public class Usersmodel implements Parcelable {
     private String Surname;
     private String Email;
     private String Phonenumber;
+    private String Url;
 
     public Usersmodel(){
 
@@ -18,6 +19,7 @@ public class Usersmodel implements Parcelable {
         Surname = in.readString();
         Email = in.readString();
         Phonenumber = in.readString();
+        Url = in.readString();
     }
 
     public static final Creator<Usersmodel> CREATOR = new Creator<Usersmodel>() {
@@ -63,11 +65,17 @@ public class Usersmodel implements Parcelable {
     public void setPhonenumber(String phonenumber) {
         this.Phonenumber = phonenumber;
     }
-    public Usersmodel(String firstname, String surname, String email, String phone) {
+    public String getUrl(){return Url;}
+    public void setUrl(String url)
+    {
+        this.Url = url;
+    }
+    public Usersmodel(String firstname, String surname, String email, String phone,String url) {
         Firstname = firstname;
         Surname = surname;
         Email = email;
         Phonenumber = phone;
+        Url = url;
     }
 
     @Override
@@ -81,5 +89,6 @@ public class Usersmodel implements Parcelable {
         dest.writeString(Surname);
         dest.writeString(Email);
         dest.writeString(Phonenumber);
+        dest.writeString(Url);
     }
 }

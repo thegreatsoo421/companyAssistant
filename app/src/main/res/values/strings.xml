@@ -20,4 +20,5 @@
     <string name="click_here_to_manage_the_employees">Click here to manage the employees</string>
     <string name="name">name</string>
     <string name="add_employee">Add Employee</string>
+    <string name="company_name">Company Name</string>
 </resources>

@@ -6,36 +6,193 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".view.Dashboard"
-    android:background="@color/white">
+    android:background="@color/Black">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <TableRow
         android:layout_width="match_parent"
-        android:layout_height="152dp"
-        app:srcCompat="@color/colorAccent" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/employees"
-        android:text="@string/click_here_to_manage_the_employees"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:id="@+id/EditText1"/>
+        android:layout_height="wrap_content">
 
-    <Button
+        <TextView
+            android:layout_width="361dp"
+            android:layout_height="match_parent"
+            android:fontFamily="serif"
+            android:text="@string/company_name"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/Settings"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_settings_applications_24px" />
+    </TableRow>
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/upload_to_firebase"
-        android:id="@+id/upload"/>
+        android:layout_height="264dp"
+        android:background="@drawable/ic_path_22711">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="serif"
+            android:text="welcome Sean!"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:id="@+id/WelcomeText"/>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:text="here are your finds for the day:"/>
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/business_24px" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/container_height"
+        android:id="@+id/EmployeeContainer"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_people_24px"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:text="Empoyee Manager"
+            android:layout_marginStart="80dp"/>
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="200dp"
+            android:text="Click here to manage your employees...."
+            android:textSize="13dp"
+            android:fontFamily="serif"
+            android:textAlignment="viewStart"
+            android:textStyle="bold|italic"
+            android:typeface="serif"
+            android:textColor="@color/white"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="35dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_icon"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="arrow" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/IncomeManagement"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp">
+        <ImageView
+            android:layout_width="@dimen/container_height"
+            android:layout_height="@dimen/container_height"
+            android:src="@drawable/monetization24px"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="80dp"
+            android:text="Income Manager"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:text="Click here to manage your income...."
+            android:textSize="13sp"
+            android:fontFamily="serif"
+            android:textAlignment="viewStart"
+            android:textStyle="bold|italic"
+            android:typeface="serif"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_icon"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_height="@dimen/container_height"
+        android:layout_width="match_parent"
+        android:id="@+id/EventManager"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp">
+        <ImageView
+            android:layout_height="70dp"
+            android:layout_width="70dp"
+            android:src="@drawable/calendartoday24px"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="80dp"
+            android:text="Events Manager"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Click here to manage employees"
+            android:textSize="13sp"
+            android:fontFamily="serif"
+            android:textAlignment="viewStart"
+            android:textStyle="bold|italic"
+            android:typeface="serif"
+            android:textColor="@color/white"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="35dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_icon"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textview"/>
-    <Button
+        android:id="@+id/Todaytask"
+        android:textSize="@dimen/Text_size"
+        android:fontFamily="serif"
+        android:textAlignment="viewStart"
+        android:textStyle="bold|italic"
+        android:typeface="serif"/>
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/Usermanager"
-        android:text="@string/manage_your_profile"/>
+        android:id="@+id/TomorrowsTask"
+        android:textSize="@dimen/Text_size"
+        android:fontFamily="serif"
+        android:textAlignment="viewStart"
+        android:textStyle="bold|italic"
+        android:typeface="serif"/>
 </LinearLayout>

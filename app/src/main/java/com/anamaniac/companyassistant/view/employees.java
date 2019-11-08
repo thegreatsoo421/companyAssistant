@@ -73,6 +73,7 @@ public class employees extends AppCompatActivity implements EmployeesInterface {
             }
         });
         profileViewAdapter.setClicklistener(this);
+
     }
 
 

@@ -26,6 +26,9 @@ import com.anamaniac.companyassistant.model.IncomeViewModel;
 import com.anamaniac.companyassistant.model.Incomemodel;
 import com.anamaniac.companyassistant.model.ProfileViewModel;
 import com.anamaniac.companyassistant.model.Usersmodel;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideBuilder;
+import com.bumptech.glide.load.model.GlideUrl;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.annotations.Nullable;
 
@@ -77,12 +80,8 @@ public class Profile extends AppCompatActivity {
         surname.setText(profile.getSurname());
         email.setText(profile.getEmail());
         PhoneNumber.setText(profile.getPhonenumber());
-        String url = "https://images.unsplash.com/photo-1571747601169-ffb297b32117?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80";
-        imageView.setImageURI(Uri.parse(url));
-
-
-
-
+        String url = profile.getUrl();
+        Glide.with(this).load(url).into(imageView);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -114,7 +113,7 @@ public class Profile extends AppCompatActivity {
                     preferenceEditor.putString("Uri",url);
                     preferenceEditor.commit();
 
-                    imageView.setImageURI(Uri.parse(url));
+                   imageView.setImageURI(imageUri);
                 }
             }
         }catch (Exception e)

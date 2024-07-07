@@ -1,0 +1,137 @@
+repo_name: seanodera/companyAssistant
+report_id: 6bdf9e7501f337ddf9b4861252cf66a9
+version: 0.1
+repo_type: Public
+timestamp: '2024-07-07T22:07:18+00:00'
+requested_by: seanodera
+provider: github
+branch: master
+detected_tools_count: 9
+tools:
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/seanodera/companyAssistant
+  detection_source: Repo Metadata
+- name: Android SDK
+  description: An SDK that provides you the API libraries and developer tools necessary
+    to build, test, and debug apps for Android.
+  website_url: http://developer.android.com
+  version: '29.0'
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1010/m8jf0po4imu8t5eemjdd.png
+  detection_source_url: https://github.com/seanodera/companyAssistant/blob/master/app/build.gradle
+  detection_source: app/build.gradle
+  last_updated_by: thegreatsoo421
+  last_updated_on: 2019-11-08 08:26:42.000000000 Z
+- name: Firebase
+  description: The Realtime App Platform
+  website_url: https://firebase.google.com/
+  open_source: false
+  hosted_saas: true
+  category: Application Hosting
+  sub_category: Realtime Backend / API
+  image_url: https://img.stackshare.io/service/116/cZLxNFZS.jpg
+  detection_source_url: https://github.com/seanodera/companyAssistant/blob/master/app/build.gradle
+  detection_source: app/build.gradle
+  last_updated_by: thegreatsoo421
+  last_updated_on: 2019-11-08 08:26:42.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/seanodera/companyAssistant
+  detection_source: Repo Metadata
+- name: Gradle
+  description: A powerful build system for the JVM
+  website_url: https://www.gradle.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Java Build Tools
+  image_url: https://img.stackshare.io/service/975/gradlephant-social-black-bg.png
+  detection_source_url: https://github.com/seanodera/companyAssistant/blob/master/app/build.gradle
+  detection_source: app/build.gradle
+  last_updated_by: thegreatsoo421
+  last_updated_on: 2019-10-08 10:11:25.000000000 Z
+- name: Android OS
+  description: An open source mobile operating system by Google
+  website_url: https://www.android.com
+  version: '10.0'
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Operating Systems
+  image_url: https://img.stackshare.io/service/9586/ZvmtaSXW_400x400.jpg
+  detection_source_url: https://github.com/seanodera/companyAssistant/blob/master/app/build.gradle
+  detection_source: app/build.gradle
+  last_updated_by: thegreatsoo421
+  last_updated_on: 2019-11-08 08:26:42.000000000 Z
+- name: com.google.code.gson:gson
+  description: Gson JSON library
+  version: 2.8.6
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/seanodera/companyAssistant/blob/master/app/build.gradle
+  detection_source: app/build.gradle
+  last_updated_by: thegreatsoo421
+  last_updated_on: 2019-11-08 08:26:42.000000000 Z
+  vulnerabilities:
+  - name: Deserialization of Untrusted Data in Gson
+    cve_id: CVE-2022-25647
+    cve_url: https://github.com/advisories/GHSA-4jrv-ppp4-jm57
+    detected_date: May 21
+    severity: high
+    first_patched: 2.8.9
+- name: junit:junit
+  description: JUnit is a unit testing framework for Java
+  version: '4.12'
+  license: EPL-1.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/seanodera/companyAssistant/blob/master/app/build.gradle
+  detection_source: app/build.gradle
+  last_updated_by: thegreatsoo421
+  last_updated_on: 2019-10-08 10:11:25.000000000 Z
+  vulnerabilities:
+  - name: TemporaryFolder on unix-like systems does not limit access to created files
+    cve_id: CVE-2020-15250
+    cve_url: https://github.com/advisories/GHSA-269g-pwp5-87pp
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 4.13.1
+- name: com.github.bumptech.glide:glide
+  description: A fast and efficient image loading library for Android focused on smooth
+    scrolling
+  version: 4.10.0
+  license: BSD-2-Clause,Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/seanodera/companyAssistant/blob/master/app/build.gradle
+  detection_source: app/build.gradle
+  last_updated_by: thegreatsoo421
+  last_updated_on: 2019-11-08 08:26:42.000000000 Z
